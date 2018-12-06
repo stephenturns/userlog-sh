@@ -66,8 +66,8 @@ echo - funcUserList - BEGIN
   
   #While loop to iterate line by line the results of $readout
   while read line; do 
-  #$line output offline session: z5094730 Aug 22 08:28 08:51 (00:23)
-  #$line output online session: z5094730 Aug 22 08:28 logged in
+  #$line output offline session: user Aug 22 08:28 08:51 (00:23)
+  #$line output online session: user Aug 22 08:28 logged in
    
   strUser=$(echo $line | awk '{print $1'})
   strDuration=$(echo $line | awk '{print $6'})
